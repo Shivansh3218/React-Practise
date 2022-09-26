@@ -1,0 +1,13 @@
+.form_class{
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+input{
+    width: 200px;
+}
+.content{
+    background-color: aqua;
+    display: flex;
+    gap: 20px;
+}
