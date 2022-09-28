@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Hook from './Components/Hook'
+import Keyboard from './Components/Keyboard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Hook />
+    {/* <Hook /> */}
+    < Keyboard />
   </React.StrictMode>
 );
 
