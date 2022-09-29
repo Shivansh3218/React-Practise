@@ -27,6 +27,9 @@ let  Keyboard = ()=>{
         <button onClick={add}>j</button>
         <button onClick={add}>k</button>
         <button onClick={add}>l</button>
+        <button onClick={()=>{
+          setBtn(btn.slice(0,-1))
+        }}>BackSpace</button>
         </>
     )
 }
