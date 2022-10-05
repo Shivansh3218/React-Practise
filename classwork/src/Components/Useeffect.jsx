@@ -4,7 +4,7 @@ import axios from 'axios'
 function Useeffect() {
 // let [posts , setPosts]=useState([]);
 let [post , setPost]=useState([]);
-let[id, setId] =useState((1))
+// let[id, setId] =useState((1))
 
 // useEffect(()=>{
 //    axios.get('https://jsonplaceholder.typicode.com/posts/1')
@@ -15,7 +15,7 @@ let[id, setId] =useState((1))
 // },[])
 
 useEffect(()=>{
-    axios.get('https://jsonplaceholder.typicode.com/posts/1')
+    axios.get('https://jsonplaceholder.typicode.com/posts')
     .then(response=> {
         console.log(response.data)
        setPost([...response.data])
@@ -24,14 +24,14 @@ useEffect(()=>{
   return (
     <div>
    {
-    // posts.map((post)=>(  //-----------------Doubt why use paranthesis here
+    post.map((post)=>{  //-----------------Doubt why use paranthesis here 
         // console.log(post.body)
         <div >
-            <p>{JSON.stringify(post)}</p>
-            <p>{post}</p>
+            <h1 key={post.id}>{post.title}</h1>
+            {/* <p>{post.body}</p> */}
         </div>
     
-        // ))
+    })
    }
     </div>
 
