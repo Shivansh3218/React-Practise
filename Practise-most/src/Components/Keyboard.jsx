@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import {Link} from "react-router-dom"
 
 let  Keyboard = ()=>{
 
@@ -8,6 +9,15 @@ let  Keyboard = ()=>{
     }
     return(
         <>
+          <ul>
+          <li>
+            <Link to="/Hook">Hook</Link></li>
+            <li><Link to="/">Checkbox</Link></li>
+            <li><Link to="/Keyboard">Keyboard</Link></li>
+            <li> <Link to="/LoginPage">LoginPage</Link></li>
+            <li> <Link to="/Useeffect">Useeffect</Link></li>
+            <li> <Link to="/Welcome">Welcome</Link></li>
+        </ul>
         <h1>KEYBOARD</h1>
         <input type="text" value={btn}/>
         <button onClick={add}>q</button>
