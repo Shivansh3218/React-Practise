@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Link} from 'react-router-dom'
 
 function Todo() {
   let [name, setName] = useState({
@@ -34,7 +35,17 @@ function Todo() {
   }
   return (
     <>
+         <ul>
+          <li>
+            <Link to="/Hook">Hook</Link></li>
+            <li><Link to="/">Checkbox</Link></li>
+            <li><Link to="/Keyboard">Keyboard</Link></li>
+            <li> <Link to="/LoginPage">LoginPage</Link></li>
+            <li> <Link to="/Useeffect">Useeffect</Link></li>
+            <li> <Link to="/Welcome">Welcome</Link></li>
+        </ul>
     <h1>TODO </h1>
+
       <form>
         <div className="form_class">
             <h3>First Name</h3>
@@ -74,6 +85,7 @@ function Todo() {
       {para.map((item,index) => {
         
          return (
+
           editable!==index?
           <div className="content">
             <p>{item.firstname}</p>
