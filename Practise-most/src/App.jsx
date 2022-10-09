@@ -5,6 +5,8 @@ import Keyboard from './Components/Keyboard'
 import { LoginPage } from './Components/LoginPage'
 import Todo from './Components/Todo'
 import { Route, Routes } from 'react-router-dom'
+import Welcome from './Components/Welcome'
+import Useeffect from './Components/Useeffect'
 
 export default function App() {
   return (
@@ -14,6 +16,8 @@ export default function App() {
       <Route path='/Keyboard' element={<Keyboard/>}/>
       <Route path='/LoginPage' element={<LoginPage/>}/>
       <Route path='/Todo' element={<Todo/>}/>
+      <Route path='/Welcome' element={<Welcome/>}/>
+      <Route path='/Useeffect' element={<Useeffect/>}/>
     </Routes>
   )
 }
