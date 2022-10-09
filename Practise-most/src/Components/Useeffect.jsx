@@ -23,6 +23,7 @@ useEffect(()=>{
 },[])
   return (
     <div>
+      <h1>USE EFFECT </h1>
    {
     post.map((post)=>{  //-----------------Doubt why use paranthesis here 
         // console.log(post.body)

@@ -16,7 +16,7 @@ export default function Hook() {
     console.log(para)
   };
   return (
-    <>
+    <><h1>HOOK </h1>
       <form>
         <div className="form_class">
             <h3>First Name</h3>

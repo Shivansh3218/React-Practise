@@ -8,6 +8,7 @@ let  Keyboard = ()=>{
     }
     return(
         <>
+        <h1>KEYBOARD</h1>
         <input type="text" value={btn}/>
         <button onClick={add}>q</button>
         <button onClick={add}>w</button>

@@ -11,7 +11,8 @@ export function LoginPage() {
   };
   return (
   <>
-  <form action="./Welcome.jsx">
+  <h1>LOGIN PAGE</h1> 
+   <form action="./Welcome.jsx">
     <label htmlFor="Username" >Enter Username</label>
     <input className="user" onChange={(e)=>{
       setUsername(e.target.value)

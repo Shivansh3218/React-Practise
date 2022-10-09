@@ -1,5 +1,5 @@
 import React from "react";
-class App extends React.Component {
+class Checkbox extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -16,6 +16,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <h1>CHECK BOX </h1>
         <h2>Q. What are the foods that you like ?</h2>
         <h2>A. {this.state.name}</h2>
         <input onChange={this.joy} type="checkbox" id="fruits" value="Fruits" />
@@ -39,4 +40,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Checkbox;
