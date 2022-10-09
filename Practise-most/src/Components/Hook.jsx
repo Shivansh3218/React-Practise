@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Hook.css";
+import {Link} from 'react-router-dom'
 export default function Hook() {
   let [name, setName] = useState({
     firstname: "",
@@ -16,7 +17,17 @@ export default function Hook() {
     console.log(para)
   };
   return (
-    <><h1>HOOK </h1>
+    <>
+         <ul>
+          <li>
+            <Link to="/Hook">Hook</Link></li>
+            <li><Link to="/">Checkbox</Link></li>
+            <li><Link to="/Keyboard">Keyboard</Link></li>
+            <li> <Link to="/LoginPage">LoginPage</Link></li>
+            <li> <Link to="/Useeffect">Useeffect</Link></li>
+            <li> <Link to="/Welcome">Welcome</Link></li>
+        </ul>
+    <h1>HOOK </h1>
       <form>
         <div className="form_class">
             <h3>First Name</h3>
@@ -55,6 +66,7 @@ export default function Hook() {
 
       {para.map((item) => {
         return (
+               
           <div className="content">
             <p>{item.firstname}</p>
             <p>{item.lastname}</p>
