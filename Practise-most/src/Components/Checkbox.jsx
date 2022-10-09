@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 class Checkbox extends React.Component {
   constructor() {
     super();
@@ -16,6 +17,15 @@ class Checkbox extends React.Component {
   render() {
     return (
       <div>
+        <ul>
+          <li>
+            <Link to="/Hook">Hook</Link></li>
+            <li><Link to="/Checkbox">Checkbox</Link></li>
+            <li><Link to="/Keyboard">Keyboard</Link></li>
+            <li> <Link to="/LoginPage">LoginPage</Link></li>
+            <li> <Link to="/Useeffect">Useeffect</Link></li>
+            <li> <Link to="/Welcome">Welcome</Link></li>
+        </ul>
         <h1>CHECK BOX </h1>
         <h2>Q. What are the foods that you like ?</h2>
         <h2>A. {this.state.name}</h2>
