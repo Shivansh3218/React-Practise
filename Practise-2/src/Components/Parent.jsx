@@ -5,6 +5,6 @@ export default function Parent() {
   return (
     <div>
         <h1>Parent</h1>
-        <Child1  name="Hello" />
+        <Child1  name="Hello" class ="12th" />
     </div>)
 }
