@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Welcome from "./Welcome";
 import {Link} from 'react-router-dom'
 
 export function LoginPage() {
