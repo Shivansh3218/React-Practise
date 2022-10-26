@@ -1,4 +1,4 @@
-import { useContext , createContext } from "react";
+import { createContext } from "react";
 import Child from './Child'
 let data = createContext()
 let data1 = createContext()
