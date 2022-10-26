@@ -3,21 +3,13 @@ import Child1 from "./Child1";
 import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { createContext } from "react";
-let data = createContext();
+import { NameContext } from "../contexts/NameContext";
 function Parent() {
-  let [name, setName] = useState("");
+  const { name, handleChange } = useContext(NameContext);
   return (
     <>
-  
       <div>
-        <input
-          type="text"
-          value={name}
-          onChange={(e) => {
-            setName(e.target.value);
-            localStorage.setItem("name", name);
-          }}
-        />
+        <input type="text" value={name} onChange={handleChange} />
         <h1>Parent</h1>
         <li>
           <Link to={"/child"}>Child</Link>
@@ -27,4 +19,3 @@ function Parent() {
   );
 }
 export default Parent;
-export { data };
