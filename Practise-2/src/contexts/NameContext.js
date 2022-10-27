@@ -15,5 +15,4 @@ function NameProvider({ children }) {
         </NameContext.Provider>
     );
 }
-
 export { NameContext, NameProvider };
