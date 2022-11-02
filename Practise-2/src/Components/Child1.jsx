@@ -6,6 +6,7 @@ export default function Child1(n) {
   return (
     <div>
         <h1>Child1 name = {name}</h1>
+        {console.log(NameContext)}
     </div>
   )
 }
