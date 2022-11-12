@@ -1,22 +1,21 @@
-import { createContext } from "react";
-import Child1 from './Components/Child1'
-import { useState } from 'react'
+import { useContext } from "react";
+import Child1 from "./Components/Child1";
+import Child2 from "./Components/Child2";
+import Child3 from "./Components/Child3";
+import Child4 from "./Components/Child4";
+import { Context } from "./Components/Context";
 
-let transfer = createContext()
 function App() {
-  const [data, setData] = useState([])
 
   return (
     <div>
-      <input type="text" value={data} onChange={(e) => {
-        setData(e.target.value)
-      }} />
-      <transfer.Provider value={data}>
+      <Context>
         <Child1 />
-      </transfer.Provider>
+        <Child2 />
+        <Child3 />
+        <Child4 />
+      </Context>
     </div>
   );
 }
-
 export default App;
-export { transfer }
