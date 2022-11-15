@@ -1,12 +1,20 @@
 import React from 'react'
 import { useContext } from 'react'
-import {abc} from './App.js'
+import {valueContext} from './Contextprovider'
 export default function Child1() {
-    let {val}= useContext(abc) 
-    console.log("val",val)
+  let {value, setValue} = useContext(valueContext)
   return (
     <div>
-        <h1>This is Child 1</h1>
+      <select onChange={ (e)=>{
+        setValue(e.target.value)
+      }}>
+        <option value="donut">donut</option>
+        <option value="banana">banana</option>
+        <option value="apple">apple</option>
+        <option value="cherry">cherry</option>
+      </select>
+
+      <h1>{value}</h1>
     </div>
   )
 }
