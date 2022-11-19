@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import Comp from './Comp'
+import CardComponent from './CardComponent';
 import Practise from './Practise';
 import reportWebVitals from './reportWebVitals';
 
@@ -9,8 +9,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <>
     {/* <App /> */}
-    <Comp/>
+    {/* <Comp/> */}
     {/* <Practise/> */}
+    <CardComponent/>
    </>
 );
 

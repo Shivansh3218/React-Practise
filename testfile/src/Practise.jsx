@@ -13,32 +13,25 @@ export default function Practise() {
           `https://api.coingecko.com/api/v3/search/trending `
         )
         setCoinData([...response.data.coins] );
-      for(let i=0;i<response.data.coins.length;i++){
-        setCoinData([...coinData,response.data.coins[i].item])
-        console.log(coinData)
-      }
+        // console.log(response.data.coins)
       }
       getdata();
-    }, [coinData1]);
+    }, []);
 
-
-    if(coinData.length>0){
-        setCoinData1([...coinData])
-    }
+ 
     return (
   <>
-  {/* {
+  {
     !(coinData.length === 0) ?
-   ( coinData.map((item)=>{
+   ( coinData.map((i)=>{
       return(
-       <div key={item.url}>
-         <p>{item.name}</p>
-        <img src= {item.image} alt="" />
+       <div key={i.item.name}>
+         <p>{i.item.symbol}</p>
        </div>
       )
     })):
     null
-  } */}
+  }
   
   </>
     );
