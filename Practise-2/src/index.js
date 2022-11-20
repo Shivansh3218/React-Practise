@@ -6,6 +6,7 @@ import Application from './Application';
 import Useref from './Components/Useref'
   import { NameProvider } from './contexts/NameContext';
 import UseMemo from './Components/UseMemo';
+import UseCallback from './Components/UseCallback';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
@@ -13,8 +14,8 @@ root.render(
  <BrowserRouter>
    {/* <Application/>  */}
      {/* <Useref /> */}
-     <UseMemo/>
-     
+     {/* <UseMemo/> */}
+     <UseCallback/>
  </BrowserRouter> 
   </NameProvider>
  
