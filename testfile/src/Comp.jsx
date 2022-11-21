@@ -36,6 +36,7 @@ export default function BasicTable() {
     getdata();
   }, []);
 
+  let arr = ["Currency Name","Symbol","Current Price","Price Change","Market Rank"]
   return (
     <>
     {
@@ -44,12 +45,13 @@ export default function BasicTable() {
       <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
+         
           <TableRow>
-            <TableCell>Currency Name</TableCell>
-            <TableCell align="right">Symbol</TableCell>
-            <TableCell align="right">Current Price</TableCell>
-            <TableCell align="right">Price Change</TableCell>
-            <TableCell align="right">Market Rank</TableCell>
+            {
+              arr.map((item)=>{
+               return <TableCell align="right">{item}</TableCell>
+              })
+            }
           </TableRow>
         </TableHead>
         <TableBody>
