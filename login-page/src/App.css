@@ -1,0 +1,36 @@
+.input {
+  margin-left: 30vw;
+  width: 30%;
+  height: 20%;
+  display: grid;
+  grid-auto-rows: 2rem;
+  gap: 2rem;
+  grid-template-columns: 40vw;
+}
+.inactive {
+  display: none;
+}
+.login,
+.signup {
+  color: blue;
+  padding:0.5rem;
+  margin: 1rem;
+  background-color: rgb(177, 255, 117);
+  border: none;
+  margin: 1rem;
+}
+.login:hover{
+  background-color: aquamarine;
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+.signup:hover{
+  background-color: aquamarine;
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+.username_field,
+.password-field,
+.email-field {
+  margin: 1rem;
+}
