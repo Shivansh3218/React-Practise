@@ -4,9 +4,10 @@ import { useState, createContext } from 'react'
 let valueContext = createContext()
 
  function Contextprovider({children}) {
-    let [value, setValue] = useState("Crane")
+    let [value, setValue] = useState({ name:"", age:""})
+    // let value = {name:"", age:""}
   return (
-  <valueContext.Provider value={{value, setValue}}>
+  <valueContext.Provider value={{value,setValue}}>
     {children}
   </valueContext.Provider>
   )
