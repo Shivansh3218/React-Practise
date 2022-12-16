@@ -3,19 +3,21 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import Application from './Application';
-import Useref from './Components/Useref'
+import UseRef2 from './Components/UseRef2'
   import { NameProvider } from './contexts/NameContext';
 import UseMemo from './Components/UseMemo';
 import UseCallback from './Components/UseCallback';
+import Timer from './Components/Timer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
   <NameProvider>
  <BrowserRouter>
    {/* <Application/>  */}
-     {/* <Useref /> */}
+     {/* <UseRef2 /> */}
      {/* <UseMemo/> */}
-     <UseCallback/>
+     <Timer/>
+     {/* <UseCallback/> */}
  </BrowserRouter> 
   </NameProvider>
  
