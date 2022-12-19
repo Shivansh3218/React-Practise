@@ -1,7 +1,7 @@
 import React, { memo } from 'react'
 
 
-function UseCallbackChild() {
+function UseCallbackChild({value, fun}) {
 
     console.log("child is logging")
   return (

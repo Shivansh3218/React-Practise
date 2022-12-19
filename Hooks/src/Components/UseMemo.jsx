@@ -18,7 +18,6 @@ const handleCount1 = ()=>{
 
 const isEven = useMemo(()=>{
     for(let i=0;i<1000000000;i++){}
-    
     console.log("this is memo")
     return count1%2===0
 },[count1])

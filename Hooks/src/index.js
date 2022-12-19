@@ -8,16 +8,18 @@ import UseRef2 from './Components/UseRef2'
 import UseMemo from './Components/UseMemo';
 import UseCallback from './Components/UseCallback';
 import Timer from './Components/Timer';
+import UseReducer from './Components/UseReducer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
   <NameProvider>
  <BrowserRouter>
    {/* <Application/>  */}
-     {/* <UseRef2 /> */}
-     {/* <UseMemo/> */}
-     <Timer/>
-     {/* <UseCallback/> */}
+     <UseRef2 />
+     <UseMemo/>
+     {/* <Timer/> */}
+     {/* <UseReducer/> */}
+     <UseCallback/>
  </BrowserRouter> 
   </NameProvider>
  

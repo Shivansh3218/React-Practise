@@ -20,12 +20,10 @@ const handleClick= ()=>{
 
 return(
     <>
-    <input type="text"onChange={(e)=>setName(e.target.value)}/>
+    <input  ref={initalvalue}  type="text" onChange={(e)=>setName(e.target.value)}/>
     <h1>My count is {count.current}</h1>
 
-
-
-    <input type="text"  ref={initalvalue}  />
+    <input type="text"  />
     <button onClick={handleClick}>Submit</button>
     </>
 )
