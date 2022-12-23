@@ -9,17 +9,21 @@ import UseMemo from './Components/UseMemo';
 import UseCallback from './Components/UseCallback';
 import Timer from './Components/Timer';
 import UseReducer from './Components/UseReducer';
+import News from './Components/News';
+import Counter from './Components/Counter';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
   <NameProvider>
  <BrowserRouter>
    {/* <Application/>  */}
-     <UseRef2 />
-     <UseMemo/>
+     {/* <UseRef2 /> */}
+     {/* <UseMemo/> */}
      {/* <Timer/> */}
+     {/* <Counter/> */}
+     <News/>
      {/* <UseReducer/> */}
-     <UseCallback/>
+     {/* <UseCallback/> */}
  </BrowserRouter> 
   </NameProvider>
  
