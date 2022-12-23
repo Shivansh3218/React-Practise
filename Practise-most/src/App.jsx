@@ -11,8 +11,8 @@ import Useeffect from './Components/Useeffect'
 export default function App() {
   return (
     <Routes>
-      <Route path='/' element={<Checkbox/>}/>
-      <Route path='/Hook' element={  <Hook />}/>
+      {/* <Route path='/' element={<Checkbox/>}/> */}
+      <Route path='/' element={  <Hook />}/>
       <Route path='/Keyboard' element={<Keyboard/>}/>
       <Route path='/LoginPage' element={<LoginPage/>}/>
       <Route path='/Todo' element={<Todo/>}/>

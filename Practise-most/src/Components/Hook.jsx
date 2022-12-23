@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import "./Hook.css";
+import { ThemeContext } from "./Context";
 import {Link} from 'react-router-dom'
+import { useContext } from "react";
+
 export default function Hook() {
+  const {theme,setTheme} = useContext(ThemeContext)
+  const [pageTheme,setPageTheme] =  useState(theme.light)
   let [name, setName] = useState({
     firstname: "",
     lastname: "",
@@ -9,6 +14,7 @@ export default function Hook() {
     team: "",
   });
   let [para, setpara] = useState([]);
+  const [count,setCount ]=  useState(0)
 
   let addpara = (e) => {
     e.preventDefault();
@@ -16,8 +22,20 @@ export default function Hook() {
     setName({firstname:"",lastname:"",email:"",team:""})
     console.log(para)
   };
+
+
+  const handleTheme = ()=>{
+    console.log("theme")
+    count==0? setCount(1):setCount(0)
+    count==0? setPageTheme(theme.dark):setPageTheme(theme.light)
+   }
+   
+  // const handleTheme = ()=>{
+  //   console.log(theme.dark)
+  // }
   return (
-    <>
+    < div style={pageTheme}>
+      <button onClick={handleTheme}>Toggle Theme</button>
          <ul>
           <li>
             <Link to="/Hook">Hook</Link></li>
@@ -82,6 +100,6 @@ export default function Hook() {
           </div>
         );
       })}
-    </>
+    </div>
   );
 }

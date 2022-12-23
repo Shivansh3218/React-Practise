@@ -26,8 +26,8 @@ useEffect(()=>{
     <div>
            <ul>
           <li>
-            <Link to="/Hook">Hook</Link></li>
-            <li><Link to="/">Checkbox</Link></li>
+            <Link to="/">Hook</Link></li>
+            {/* <li><Link to="/">Checkbox</Link></li> */}
             <li><Link to="/Keyboard">Keyboard</Link></li>
             <li> <Link to="/LoginPage">LoginPage</Link></li>
             <li> <Link to="/Useeffect">Useeffect</Link></li>
