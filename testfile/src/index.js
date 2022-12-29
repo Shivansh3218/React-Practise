@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import CardComponent from './CardComponent';
-import Comp from './Comp';
-import Counter from './Counter';
-import Practise from './Practise';
+// import CardComponent from './CardComponent';
+// import Comp from './Comp';
+// import Counter from './Counter';
+// import Login from './Login';
+// import Practise from './Practise';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,7 +13,16 @@ root.render(
    <>
     {/* <App /> */}
     {/* <Comp/> */}
-    <Counter/>
+    {/* <Counter/> */}
+
+
+
+
+{/* <Login/> */}
+<App/>
+
+
+
     {/* <Practise/> */}
     {/* <CardComponent/> */}
    </>

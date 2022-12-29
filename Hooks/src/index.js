@@ -22,8 +22,8 @@ root.render(
      {/* <UseRef2 /> */}
      {/* <UseMemo/> */}
      {/* <Timer/> */}
-     {/* <Counter/> */}
-     <News/>
+     <Counter/>
+     {/* <News/> */}
      {/* <UseReducer/> */}
      {/* <UseCallback/> */}
  </BrowserRouter> 
